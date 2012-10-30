@@ -1,0 +1,3 @@
+[submodule "GPUImage.framework"]
+	path = GPUImage.framework
+	url = git://github.com/lognllc/GPUImage.framework.git
