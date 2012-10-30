@@ -9,6 +9,7 @@
 #import "ViddyViewController.h"
 #import "iCarousel.h"
 #import <GPUImage/GPUImage.h>
+#import "ViddyVintageFilter.h"
 
 @interface ViddyViewController () <iCarouselDataSource, iCarouselDelegate>
 
@@ -18,7 +19,7 @@
 {
 	GPUImageVideoCamera *videoCamera;
 	GPUImageFilterPipeline *pipeline;
-	__unsafe_unretained GPUImageView *filterView;
+	GPUImageView *filterView;
 	NSArray *effects;
 	NSArray *effectsConfiguration;
 }
@@ -34,16 +35,13 @@
 }
 
 #pragma mark - View Lifecycle
-- (void)loadView
-{
-	GPUImageView *view = [[GPUImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-	view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-	self.view = filterView = view;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	filterView = [[GPUImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+	filterView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+	[self.view addSubview:filterView];
+	
 	CGSize size = self.view.bounds.size;
 	effects = @[@"vintage", @"soho", @"bw"];
 	NSDictionary *conf = @{@"Filters" : @[
@@ -52,7 +50,7 @@
 	]};
 
 	NSDictionary *vintage = @{@"Filters" : @[
-	@{@"FilterName" : @"GPUImageSketchFilter"}
+	@{@"FilterName" : @"ViddyVintageFilter"}
 	]};
 	NSDictionary *soho = @{@"Filters" : @[
 	@{@"FilterName" : @"GPUImageVignetteFilter"}
@@ -106,11 +104,11 @@
 #pragma mark - iCarousel Delegate & DataSource
 - (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index
 {
-	[videoCamera startCameraCapture];
+	[videoCamera pauseCameraCapture];
 	pipeline = [[GPUImageFilterPipeline alloc] initWithConfiguration:effectsConfiguration[index]
 															   input:videoCamera
 															  output:filterView];
-	[videoCamera startCameraCapture];
+	[videoCamera resumeCameraCapture];
 }
 
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel

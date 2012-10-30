@@ -14,7 +14,6 @@
 		CF86F91F163FD8EB0041CA5C /* vintage.png in Resources */ = {isa = PBXBuildFile; fileRef = CF86F91E163FD8EB0041CA5C /* vintage.png */; };
 		CF86F924163FD9C60041CA5C /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF86F922163FD9C60041CA5C /* iCarousel.m */; };
 		CF86F927163FDD6D0041CA5C /* bw_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = CF86F925163FDD6D0041CA5C /* bw_overlay.png */; };
-		CF86F928163FDD6D0041CA5C /* overlay.m4v in Resources */ = {isa = PBXBuildFile; fileRef = CF86F926163FDD6D0041CA5C /* overlay.m4v */; };
 		CFB45DE9163FCEE10001E310 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB45DE8163FCEE10001E310 /* UIKit.framework */; };
 		CFB45DEB163FCEE10001E310 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB45DEA163FCEE10001E310 /* Foundation.framework */; };
 		CFB45DED163FCEE10001E310 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB45DEC163FCEE10001E310 /* CoreGraphics.framework */; };
@@ -30,6 +29,8 @@
 		CFB45E0C163FD0250001E310 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB45E0B163FD0250001E310 /* CoreMedia.framework */; };
 		CFB45E0E163FD0290001E310 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB45E0D163FD0290001E310 /* AVFoundation.framework */; };
 		CFB45E10163FD0320001E310 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB45E0F163FD0320001E310 /* QuartzCore.framework */; };
+		CFF48187163FE12400B72A1F /* ViddyVintageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF48185163FE12400B72A1F /* ViddyVintageFilter.m */; };
+		CFF4818A163FE16400B72A1F /* vintage_overlay.m4v in Resources */ = {isa = PBXBuildFile; fileRef = CFF48189163FE16400B72A1F /* vintage_overlay.m4v */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +43,6 @@
 		CF86F921163FD9C60041CA5C /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = iCarousel.h; sourceTree = "<group>"; };
 		CF86F922163FD9C60041CA5C /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		CF86F925163FDD6D0041CA5C /* bw_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bw_overlay.png; path = vintage.fx/production/bw_overlay.png; sourceTree = "<group>"; };
-		CF86F926163FDD6D0041CA5C /* overlay.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = overlay.m4v; path = vintage.fx/production/overlay.m4v; sourceTree = "<group>"; };
 		CFB45DE4163FCEE10001E310 /* ViddyEffectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViddyEffectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB45DE8163FCEE10001E310 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CFB45DEA163FCEE10001E310 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,6 +62,9 @@
 		CFB45E0B163FD0250001E310 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		CFB45E0D163FD0290001E310 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CFB45E0F163FD0320001E310 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CFF48184163FE12400B72A1F /* ViddyVintageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = ViddyVintageFilter.h; sourceTree = "<group>"; };
+		CFF48185163FE12400B72A1F /* ViddyVintageFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViddyVintageFilter.m; sourceTree = "<group>"; };
+		CFF48189163FE16400B72A1F /* vintage_overlay.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = vintage_overlay.m4v; path = vintage.fx/production/vintage_overlay.m4v; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 				CFB45DF8163FCEE10001E310 /* AppDelegate.m */,
 				CF86F8D3163FD0780041CA5C /* ViddyViewController.h */,
 				CF86F8D4163FD0780041CA5C /* ViddyViewController.m */,
+				CFF48184163FE12400B72A1F /* ViddyVintageFilter.h */,
+				CFF48185163FE12400B72A1F /* ViddyVintageFilter.m */,
 				CFB45DEF163FCEE10001E310 /* Supporting Files */,
 			);
 			path = ViddyEffectDemo;
@@ -145,8 +150,8 @@
 		CFB45DEF163FCEE10001E310 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CFF48189163FE16400B72A1F /* vintage_overlay.m4v */,
 				CF86F925163FDD6D0041CA5C /* bw_overlay.png */,
-				CF86F926163FDD6D0041CA5C /* overlay.m4v */,
 				CF86F91A163FD8CE0041CA5C /* bw.png */,
 				CF86F91C163FD8E20041CA5C /* soho.png */,
 				CF86F91E163FD8EB0041CA5C /* vintage.png */,
@@ -220,7 +225,7 @@
 				CF86F91D163FD8E20041CA5C /* soho.png in Resources */,
 				CF86F91F163FD8EB0041CA5C /* vintage.png in Resources */,
 				CF86F927163FDD6D0041CA5C /* bw_overlay.png in Resources */,
-				CF86F928163FDD6D0041CA5C /* overlay.m4v in Resources */,
+				CFF4818A163FE16400B72A1F /* vintage_overlay.m4v in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +240,7 @@
 				CFB45DF9163FCEE10001E310 /* AppDelegate.m in Sources */,
 				CF86F8D6163FD0780041CA5C /* ViddyViewController.m in Sources */,
 				CF86F924163FD9C60041CA5C /* iCarousel.m in Sources */,
+				CFF48187163FE12400B72A1F /* ViddyVintageFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
