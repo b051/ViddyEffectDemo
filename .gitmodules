@@ -1,3 +1,6 @@
 [submodule "GPUImage.framework"]
 	path = GPUImage.framework
 	url = git://github.com/lognllc/GPUImage.framework.git
+[submodule "iCarousel"]
+	path = iCarousel
+	url = git://github.com/nicklockwood/iCarousel.git

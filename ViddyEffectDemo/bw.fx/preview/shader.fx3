@@ -1,0 +1,45 @@
+{
+    "__requiredLibraryVersion": 1.0,
+    "__externalOutput": "VDFXIShaderBW0",
+    "__nodes": [{
+        "inputs": {},
+        "_builder": "FXIShaderOutlet",
+        "_name": "FXIShaderOutlet2",
+        "knobs": {
+            "vec2": {},
+            "vec4": {},
+            "sampler2D": {}
+        }
+    }, {
+        "inputs": {},
+        "_builder": "FXIShaderMovieReader",
+        "_name": "FXIShaderMovieReader1",
+        "knobs": {
+            "vec4": {},
+            "vec2": {},
+            "sampler2D": {},
+            "string": {
+                "fileName": {
+                    "knobValue": "overlay.m4v",
+                    "knobInterface": "knobInterfaceUser",
+                    "knobType": "string",
+                    "knobName": "fileName"
+                }
+            }
+        }
+    }, {
+        "inputs": {
+            "input1": "FXIShaderMovieReader1",
+            "input0": "FXIShaderOutlet2"
+        },
+        "_builder": "VDFXIShaderBW",
+        "_name": "VDFXIShaderBW0",
+        "knobs": {
+            "float": {},
+            "vec4": {},
+            "vec2": {},
+            "sampler2D": {}
+        }
+    }],
+    "__externalInput": "FXIShaderOutlet2"
+}

@@ -1,0 +1,82 @@
+{
+    "__requiredLibraryVersion": 1.2,
+    "__externalOutput": "FXIShaderMultiply4",
+    "__nodes": [{
+        "inputs": {},
+        "_builder": "FXIShaderImage",
+        "_name": "FXIShaderImage3",
+        "knobs": {
+            "float": {
+                "smoothMode": {
+                    "knobValue": 0,
+                    "knobInterface": "knobInterfaceUser",
+                    "knobType": "float",
+                    "knobName": "smoothMode"
+                }
+            },
+            "vec4": {},
+            "vec2": {},
+            "sampler2D": {},
+            "string": {
+                "fileName": {
+                    "knobValue": "bw_overlay.png",
+                    "knobInterface": "knobInterfaceUser",
+                    "knobType": "string",
+                    "knobName": "fileName"
+                }
+            }
+        }
+    }, {
+        "inputs": {
+            "input1": "FXIShaderMovieReader2",
+            "input0": "FXIShaderOutlet1"
+        },
+        "_builder": "VDFXIShaderVintage",
+        "_name": "VDFXIShaderVintage0",
+        "knobs": {
+            "float": {},
+            "vec4": {},
+            "vec2": {},
+            "sampler2D": {}
+        }
+    }, {
+        "inputs": {},
+        "_builder": "FXIShaderOutlet",
+        "_name": "FXIShaderOutlet1",
+        "knobs": {
+            "vec2": {},
+            "vec4": {},
+            "sampler2D": {}
+        }
+    }, {
+        "inputs": {
+            "input1": "FXIShaderImage3",
+            "input0": "VDFXIShaderVintage0"
+        },
+        "_builder": "FXIShaderMultiply",
+        "_name": "FXIShaderMultiply4",
+        "knobs": {
+            "vec2": {},
+            "vec4": {},
+            "sampler2D": {}
+        }
+    }, {
+        "inputs": {},
+        "_builder": "FXIShaderMovieReader",
+        "_name": "FXIShaderMovieReader2",
+        "knobs": {
+            "vec4": {},
+            "vec2": {},
+            "sampler2D": {},
+            "string": {
+                "fileName": {
+                    "knobValue": "overlay.m4v",
+                    "knobInterface": "knobInterfaceUser",
+                    "knobType": "string",
+                    "knobName": "fileName"
+                }
+            }
+        }
+    }],
+    "__externalInput": "FXIShaderOutlet1"
+}

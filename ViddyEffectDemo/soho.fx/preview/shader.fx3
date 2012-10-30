@@ -1,0 +1,95 @@
+{
+    "__requiredLibraryVersion": 1.2,
+    "__externalOutput": "FXIShaderHoldFrame3",
+    "__nodes": [{
+        "inputs": {},
+        "_builder": "FXIShaderOutlet",
+        "_name": "FXIShaderOutlet0",
+        "knobs": {
+            "vec2": {},
+            "vec4": {},
+            "sampler2D": {}
+        }
+    }, {
+        "inputs": {
+            "input1": "FXIShaderImage2power2",
+            "input0": "FXIShaderOutlet0"
+        },
+        "_builder": "FXIShaderLomo1",
+        "_name": "FXIShaderLomo11",
+        "knobs": {
+            "float": {
+                "knobIntensity": {
+                    "knobName": "knobIntensity",
+                    "knobShaderPrecision": "lowp",
+                    "knobInterface": "knobInterfaceUser",
+                    "knobShaderType": "uniform",
+                    "knobValue": 1,
+                    "knobType": "float",
+                    "knobShaderIndex": -1
+                }
+            },
+            "vec4": {},
+            "vec2": {},
+            "sampler2D": {}
+        }
+    }, {
+        "inputs": {
+            "input0": "FXIShaderDenoiseShadows4"
+        },
+        "_builder": "FXIShaderHoldFrame",
+        "_name": "FXIShaderHoldFrame3",
+        "knobs": {
+            "float": {
+                "knobDuration": {
+                    "knobValue": 2,
+                    "knobInterface": "knobInterfaceUser",
+                    "knobType": "float",
+                    "knobName": "knobDuration"
+                }
+            },
+            "vec4": {},
+            "vec2": {},
+            "sampler2D": {}
+        }
+    }, {
+        "inputs": {},
+        "_builder": "FXIShaderImage2power",
+        "_name": "FXIShaderImage2power2",
+        "knobs": {
+            "float": {
+                "smoothMode": {
+                    "knobValue": 0,
+                    "knobInterface": "knobInterfaceUser",
+                    "knobType": "float",
+                    "knobName": "smoothMode"
+                }
+            },
+            "vec4": {},
+            "vec2": {},
+            "sampler2D": {},
+            "string": {
+                "fileName": {
+                    "knobValue": "vignette.png",
+                    "knobInterface": "knobInterfaceUser",
+                    "knobType": "string",
+                    "knobName": "fileName"
+                }
+            }
+        }
+    }, {
+        "inputs": {
+            "input0": "FXIShaderLomo11"
+        },
+        "_builder": "FXIShaderDenoiseShadows",
+        "_name": "FXIShaderDenoiseShadows4",
+        "knobs": {
+            "highp": {},
+            "float": {},
+            "vec4": {},
+            "vec2": {},
+            "sampler2D": {}
+        }
+    }],
+    "__externalInput": "FXIShaderOutlet0"
+}

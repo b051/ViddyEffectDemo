@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF86F8D6163FD0780041CA5C /* ViddyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF86F8D4163FD0780041CA5C /* ViddyViewController.m */; };
+		CF86F910163FD1890041CA5C /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF86F90F163FD1890041CA5C /* GPUImage.framework */; };
+		CF86F91B163FD8CE0041CA5C /* bw.png in Resources */ = {isa = PBXBuildFile; fileRef = CF86F91A163FD8CE0041CA5C /* bw.png */; };
+		CF86F91D163FD8E20041CA5C /* soho.png in Resources */ = {isa = PBXBuildFile; fileRef = CF86F91C163FD8E20041CA5C /* soho.png */; };
+		CF86F91F163FD8EB0041CA5C /* vintage.png in Resources */ = {isa = PBXBuildFile; fileRef = CF86F91E163FD8EB0041CA5C /* vintage.png */; };
+		CF86F924163FD9C60041CA5C /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF86F922163FD9C60041CA5C /* iCarousel.m */; };
+		CF86F927163FDD6D0041CA5C /* bw_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = CF86F925163FDD6D0041CA5C /* bw_overlay.png */; };
+		CF86F928163FDD6D0041CA5C /* overlay.m4v in Resources */ = {isa = PBXBuildFile; fileRef = CF86F926163FDD6D0041CA5C /* overlay.m4v */; };
 		CFB45DE9163FCEE10001E310 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB45DE8163FCEE10001E310 /* UIKit.framework */; };
 		CFB45DEB163FCEE10001E310 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB45DEA163FCEE10001E310 /* Foundation.framework */; };
 		CFB45DED163FCEE10001E310 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB45DEC163FCEE10001E310 /* CoreGraphics.framework */; };
@@ -16,9 +24,25 @@
 		CFB45DFB163FCEE10001E310 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB45DFA163FCEE10001E310 /* Default.png */; };
 		CFB45DFD163FCEE10001E310 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB45DFC163FCEE10001E310 /* Default@2x.png */; };
 		CFB45DFF163FCEE10001E310 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB45DFE163FCEE10001E310 /* Default-568h@2x.png */; };
+		CFB45E06163FD00A0001E310 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB45E05163FD00A0001E310 /* OpenGLES.framework */; };
+		CFB45E08163FD01A0001E310 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB45E07163FD01A0001E310 /* CoreVideo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		CFB45E0A163FD01F0001E310 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB45E09163FD01F0001E310 /* CoreImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		CFB45E0C163FD0250001E310 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB45E0B163FD0250001E310 /* CoreMedia.framework */; };
+		CFB45E0E163FD0290001E310 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB45E0D163FD0290001E310 /* AVFoundation.framework */; };
+		CFB45E10163FD0320001E310 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB45E0F163FD0320001E310 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF86F8D3163FD0780041CA5C /* ViddyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = ViddyViewController.h; sourceTree = "<group>"; };
+		CF86F8D4163FD0780041CA5C /* ViddyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViddyViewController.m; sourceTree = "<group>"; };
+		CF86F90F163FD1890041CA5C /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage.framework; sourceTree = "<group>"; };
+		CF86F91A163FD8CE0041CA5C /* bw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bw.png; path = bw.fx/preview/bw.png; sourceTree = "<group>"; };
+		CF86F91C163FD8E20041CA5C /* soho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = soho.png; path = soho.fx/preview/soho.png; sourceTree = "<group>"; };
+		CF86F91E163FD8EB0041CA5C /* vintage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vintage.png; path = vintage.fx/preview/vintage.png; sourceTree = "<group>"; };
+		CF86F921163FD9C60041CA5C /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = iCarousel.h; sourceTree = "<group>"; };
+		CF86F922163FD9C60041CA5C /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		CF86F925163FDD6D0041CA5C /* bw_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bw_overlay.png; path = vintage.fx/production/bw_overlay.png; sourceTree = "<group>"; };
+		CF86F926163FDD6D0041CA5C /* overlay.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = overlay.m4v; path = vintage.fx/production/overlay.m4v; sourceTree = "<group>"; };
 		CFB45DE4163FCEE10001E310 /* ViddyEffectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViddyEffectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB45DE8163FCEE10001E310 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CFB45DEA163FCEE10001E310 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,6 +56,12 @@
 		CFB45DFA163FCEE10001E310 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CFB45DFC163FCEE10001E310 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CFB45DFE163FCEE10001E310 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CFB45E05163FD00A0001E310 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		CFB45E07163FD01A0001E310 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		CFB45E09163FD01F0001E310 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		CFB45E0B163FD0250001E310 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CFB45E0D163FD0290001E310 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CFB45E0F163FD0320001E310 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,15 +69,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB45E0A163FD01F0001E310 /* CoreImage.framework in Frameworks */,
+				CFB45E06163FD00A0001E310 /* OpenGLES.framework in Frameworks */,
+				CFB45E0E163FD0290001E310 /* AVFoundation.framework in Frameworks */,
+				CFB45E0C163FD0250001E310 /* CoreMedia.framework in Frameworks */,
+				CFB45E08163FD01A0001E310 /* CoreVideo.framework in Frameworks */,
+				CFB45E10163FD0320001E310 /* QuartzCore.framework in Frameworks */,
 				CFB45DE9163FCEE10001E310 /* UIKit.framework in Frameworks */,
 				CFB45DEB163FCEE10001E310 /* Foundation.framework in Frameworks */,
 				CFB45DED163FCEE10001E310 /* CoreGraphics.framework in Frameworks */,
+				CF86F910163FD1890041CA5C /* GPUImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF86F920163FD9C60041CA5C /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				CF86F921163FD9C60041CA5C /* iCarousel.h */,
+				CF86F922163FD9C60041CA5C /* iCarousel.m */,
+			);
+			name = iCarousel;
+			path = iCarousel/iCarousel;
+			sourceTree = "<group>";
+		};
 		CFB45DD9163FCEE10001E310 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +115,14 @@
 		CFB45DE7163FCEE10001E310 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CF86F920163FD9C60041CA5C /* iCarousel */,
+				CF86F90F163FD1890041CA5C /* GPUImage.framework */,
+				CFB45E0F163FD0320001E310 /* QuartzCore.framework */,
+				CFB45E0D163FD0290001E310 /* AVFoundation.framework */,
+				CFB45E0B163FD0250001E310 /* CoreMedia.framework */,
+				CFB45E09163FD01F0001E310 /* CoreImage.framework */,
+				CFB45E07163FD01A0001E310 /* CoreVideo.framework */,
+				CFB45E05163FD00A0001E310 /* OpenGLES.framework */,
 				CFB45DE8163FCEE10001E310 /* UIKit.framework */,
 				CFB45DEA163FCEE10001E310 /* Foundation.framework */,
 				CFB45DEC163FCEE10001E310 /* CoreGraphics.framework */,
@@ -80,6 +135,8 @@
 			children = (
 				CFB45DF7163FCEE10001E310 /* AppDelegate.h */,
 				CFB45DF8163FCEE10001E310 /* AppDelegate.m */,
+				CF86F8D3163FD0780041CA5C /* ViddyViewController.h */,
+				CF86F8D4163FD0780041CA5C /* ViddyViewController.m */,
 				CFB45DEF163FCEE10001E310 /* Supporting Files */,
 			);
 			path = ViddyEffectDemo;
@@ -88,6 +145,11 @@
 		CFB45DEF163FCEE10001E310 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CF86F925163FDD6D0041CA5C /* bw_overlay.png */,
+				CF86F926163FDD6D0041CA5C /* overlay.m4v */,
+				CF86F91A163FD8CE0041CA5C /* bw.png */,
+				CF86F91C163FD8E20041CA5C /* soho.png */,
+				CF86F91E163FD8EB0041CA5C /* vintage.png */,
 				CFB45DF0163FCEE10001E310 /* ViddyEffectDemo-Info.plist */,
 				CFB45DF1163FCEE10001E310 /* InfoPlist.strings */,
 				CFB45DF4163FCEE10001E310 /* main.m */,
@@ -154,6 +216,11 @@
 				CFB45DFB163FCEE10001E310 /* Default.png in Resources */,
 				CFB45DFD163FCEE10001E310 /* Default@2x.png in Resources */,
 				CFB45DFF163FCEE10001E310 /* Default-568h@2x.png in Resources */,
+				CF86F91B163FD8CE0041CA5C /* bw.png in Resources */,
+				CF86F91D163FD8E20041CA5C /* soho.png in Resources */,
+				CF86F91F163FD8EB0041CA5C /* vintage.png in Resources */,
+				CF86F927163FDD6D0041CA5C /* bw_overlay.png in Resources */,
+				CF86F928163FDD6D0041CA5C /* overlay.m4v in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +233,8 @@
 			files = (
 				CFB45DF5163FCEE10001E310 /* main.m in Sources */,
 				CFB45DF9163FCEE10001E310 /* AppDelegate.m in Sources */,
+				CF86F8D6163FD0780041CA5C /* ViddyViewController.m in Sources */,
+				CF86F924163FD9C60041CA5C /* iCarousel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,9 +306,15 @@
 		CFB45E03163FCEE10001E310 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViddyEffectDemo/ViddyEffectDemo-Prefix.pch";
 				INFOPLIST_FILE = "ViddyEffectDemo/ViddyEffectDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -248,9 +323,15 @@
 		CFB45E04163FCEE10001E310 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViddyEffectDemo/ViddyEffectDemo-Prefix.pch";
 				INFOPLIST_FILE = "ViddyEffectDemo/ViddyEffectDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -275,6 +356,7 @@
 				CFB45E04163FCEE10001E310 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
